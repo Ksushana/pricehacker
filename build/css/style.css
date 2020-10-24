@@ -1310,6 +1310,7 @@ svg {
   font-weight: normal;
   font-size: 0.72727rem;
   line-height: 1.09091rem;
+  padding-top: 0.45455rem;
 }
 
 @media (max-width: 767px) {
@@ -1462,6 +1463,13 @@ svg {
 .new-approach__img-item--present svg {
   width: 7.27273rem;
   height: 7.31818rem;
+  margin-left: auto;
+}
+
+.new-approach__img-item--present span {
+  display: block;
+  width: 7.27273rem;
+  margin-right: auto;
 }
 
 @media (max-width: 767px) {
@@ -1481,7 +1489,7 @@ svg {
     top: unset;
     left: 5.90909rem;
     bottom: 5.90909rem;
-    right: unset;
+    right: 2.04545rem;
     left: unset;
   }
 }
@@ -1553,6 +1561,9 @@ svg {
   .new-approach__img-item--present svg {
     width: 160px;
     height: 161px;
+  }
+  .new-approach__img-item--present span {
+    width: 160px;
   }
   .new-approach__img-item--leafs {
     width: 124px;

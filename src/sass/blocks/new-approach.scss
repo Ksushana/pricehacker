@@ -111,6 +111,7 @@
       font-weight: normal;
       font-size: size(16px);
       line-height: size(24px);
+      padding-top: size(10px);
 
       @include mobile {
         font-size: size(16px);
@@ -246,9 +247,14 @@
       svg {
         width: size(160px);
         height: size(161px);
+        margin-left: auto;
       }
 
       span {
+        display: block;
+        width: size(160px);
+        margin-right: auto;
+
         @include mobile {
           text-align: left;
         }
@@ -264,7 +270,7 @@
         top: unset;
         left: size(130px);
         bottom: size(130px);
-        right: unset;
+        right: size(45px);
         left: unset;
       }
 
@@ -348,6 +354,10 @@
         svg {
           width: 160px;
           height: 161px;
+
+        }
+        span {
+          width: 160px;
         }
       }
 
