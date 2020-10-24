@@ -2361,8 +2361,8 @@ svg {
   position: relative;
   margin-bottom: 58px;
   font-weight: normal;
-  font-size: 14px !important;
-  line-height: 15px !important;
+  font-size: 14px;
+  line-height: 15px;
   top: 2px !important;
 }
 
