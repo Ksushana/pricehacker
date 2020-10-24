@@ -58,7 +58,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 1000px) {
+    @include mobile {
       display: block;
     }
   }
@@ -132,9 +132,14 @@
     border-bottom: 1px solid #C6CED2 !important;
     height: 84px;
     width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 
     @include mobile {
       height: size(84px);
+      font-size: size(16px);
+    line-height: size(24px);
     }
 
     &::placeholder {
@@ -170,9 +175,16 @@
     margin: 30px 0 24px;
     box-sizing: border-box;
     resize: none;
+    font-size: 16px;
+    line-height: 24px;
 
     @include mobile {
       height: size(138px);
+      padding: 0 0 size(30px);
+      margin: size(30px) 0 size(24px);
+      height: size(84px);
+      font-size: size(16px);
+    line-height: size(24px);
     }
 
   }

@@ -2125,7 +2125,7 @@ svg {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   .partners__be-partner {
     display: block;
   }
@@ -2229,11 +2229,16 @@ svg {
   border-bottom: 1px solid #C6CED2 !important;
   height: 84px;
   width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media (max-width: 767px) {
   .partners__input {
     height: 3.81818rem;
+    font-size: 0.72727rem;
+    line-height: 1.09091rem;
   }
 }
 
@@ -2298,11 +2303,18 @@ svg {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   resize: none;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media (max-width: 767px) {
   .partners__textarea {
     height: 6.27273rem;
+    padding: 0 0 1.36364rem;
+    margin: 1.36364rem 0 1.09091rem;
+    height: 3.81818rem;
+    font-size: 0.72727rem;
+    line-height: 1.09091rem;
   }
 }
 
