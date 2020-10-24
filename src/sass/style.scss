@@ -1,0 +1,18 @@
+/* Vendor */
+@import "vendor/normalize";
+/* General */
+@import "general/functions";
+@import "general/variables";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/global";
+/* Blocks */
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/button";
+@import "blocks/hero";
+@import "blocks/new-approach";
+@import "blocks/reduce";
+@import "blocks/questions";
+@import "blocks/app";
+@import "blocks/partners";

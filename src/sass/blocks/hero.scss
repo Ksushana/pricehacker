@@ -1,0 +1,261 @@
+.hero {
+  padding-bottom: 85px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  box-sizing: border-box;
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding-bottom: size(73px);
+  }
+
+  &__text-block {
+    padding-left: 50px;
+    position: relative;
+
+    @include tablet {
+      padding-left: 0;
+    }
+
+    @include mobile {
+      padding-top: size(5px);
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    left: -52px;
+    bottom: -21px;
+    width: 181px;
+    height: 275px;
+    max-width: 181px;
+    z-index: -1;
+
+    @include tablet {
+      display: none;
+
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 56px;
+    margin: 0 0 24px 0;
+    color: $color-dark-green;
+
+    @include tablet {
+      width: 55%;
+      font-size: 40px;
+      line-height: 42px;
+    }
+
+    @include mobile {
+      font-size: size(32px);
+      line-height: size(32px);
+      width: 100%;
+      margin: 0 0 size(24px) 0;
+      padding-right: size(43px);
+      box-sizing: border-box;
+    }
+  }
+
+  &__intro {
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 0 0 48px 0;
+
+    @include tablet {
+      width: 55%;
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    @include mobile {
+      font-size: size(16px);
+      line-height: size(24px);
+      width: 100%;
+      margin: 0 0 size(24px) 0;
+    }
+
+  }
+
+  &__list {
+    @include list-reset;
+
+    @include tablet {
+      width: 55%;
+    }
+
+    @media (max-width: 880px) {
+      width: 100%;
+      margin-top: 89px;
+    }
+
+    @include mobile {
+      margin-top: 0;
+    }
+
+  }
+
+  &__list-item {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 100px;
+    position: relative;
+    margin-bottom: 32px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      font-size: size(16px);
+      line-height: size(24px);
+      padding-left: size(53px);
+      padding-right: size(10px);
+      margin-bottom: size(32px);
+    }
+
+    svg {
+      position: absolute;
+      left: 20px;
+
+      @include mobile {
+        left: 0;
+      }
+    }
+
+    &--statistics {
+      svg {
+        width: 42px;
+        height: 28px;
+        top: calc(50% - 14px);
+
+        @include mobile {
+          width: size(37px);
+          height: size(24px);
+          top: 0;
+        }
+      }
+    }
+
+    &--bag {
+      svg {
+        width: 36px;
+        height: 39px;
+        top: calc(50% - 18px);
+        @include mobile {
+          width: size(29px);
+          height: size(32px);
+          top: 0;
+        }
+      }
+    }
+
+    &--pie-chart {
+      svg {
+        width: 34px;
+        height: 35px;
+        top: calc(50% - 17px);
+
+        @include mobile {
+          width: size(36px);
+          height: size(36px);
+          top: 0;
+        }
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    margin-top: 60px;
+    width: 430px;
+    justify-content: space-between;
+
+    @include mobile {
+      width: size(300px);
+      margin-top: size(46px);
+    }
+  }
+
+  &__link-item {
+    height: 67px;
+
+    @include mobile {
+      height: size(44px);
+      width: size(142px);
+
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+
+      img {
+        @include mobile {
+          height: size(44px);
+          width: size(142px);
+        }
+
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    top: 43px;
+    right: -63px;
+
+    @include tablet {
+      position: absolute;
+      top: 40px;
+      right: 27px;
+      width: 40%;
+    }
+
+    @media (max-width: 880px) {
+      right: 7px;
+      width: 34%;
+    }
+
+    @include mobile {
+      position: static;
+      order: -1;
+      height: size(430px);
+      width: 100vw;
+      height: size(448px);
+      z-index: -1;
+      overflow: hidden;
+      margin-left: size(-10px);
+    }
+
+    img {
+      width: 100%;
+      max-width: 635px;
+
+      @media (max-width: 1000px) {
+        width: 80%;
+      }
+
+      @include mobile {
+        max-height: unset;
+        position: relative;
+        position: relative;
+        left: size(-50px);
+        top: size(12px);
+        width: size(370px);
+        max-width: unset;
+      }
+
+    }
+  }
+
+}

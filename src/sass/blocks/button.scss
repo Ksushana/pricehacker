@@ -1,0 +1,77 @@
+.button {
+  @include button-reset-style;
+  height: 64px;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+
+  &--coral {
+    text-align: center;
+    letter-spacing: 0.35px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: $color-coral;
+    padding: 22px 11px;
+    width: 250px;
+
+    @include mobile {
+      width: size(250px);
+      margin-left: 0;
+      font-weight: 600;
+      font-size: size(17px);
+      line-height: size(22px);
+      padding: size(22px) size(11px) size(19px);
+
+    }
+  }
+
+  &--black {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 27px 30px 27px 30px;
+    background-color: $color-dark-green;
+    letter-spacing: 0.08em;
+    color: $color-light-grey;
+    width: 260px;
+    margin-right: auto;
+    height: 72px;
+    display: flex;
+
+    svg {
+      margin-left: 27px;
+    }
+
+    @include mobile {
+      font-size: size(16px);
+      line-height: size(18px);
+      padding: size(27px) size(30px) size(27px) size(30px);
+      width: size(260px);
+      height: size(72px);
+      svg {
+        margin-left: size(27px);
+        width: size(31px);
+        height: size(12px);
+      }
+    }
+  }
+
+  &--grey {
+    width: 250px;
+    margin: 0 25px;
+    background-color: $color-bg-grey;
+    text-align: center;
+
+    @include mobile {
+      width: size(250px);
+      margin: 0 size(25px);
+      font-weight: 600;
+      font-size: size(17px);
+      line-height: size(22px);
+      padding: size(22px) size(11px) size(19px);
+
+    }
+  }
+}

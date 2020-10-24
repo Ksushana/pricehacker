@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 132px 28px 40px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  align-items: center;
+
+  @include tablet {
+    padding: 28px 40px 28px 40px;
+  }
+
+  @include mobile {
+    box-shadow: none;
+    padding: size(10px);
+    margin-bottom: size(20px);
+  }
+
+  &--logo {
+    width: 195px;
+    height: 38px;
+
+    @include mobile {
+      width: size(195px);
+      height: size(38px);
+    }
+  }
+
+  &__upload {
+    @include mobile {
+      display: none;
+    }
+  }
+}

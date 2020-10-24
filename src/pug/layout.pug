@@ -1,0 +1,80 @@
+include mixins
+
+block variables
+- let mainTitle = "Pricehacker";
+
+doctype html
+html( lang="ru" )
+  head
+    meta( charset="UTF-8" )
+    title #{mainTitle} !{title && "| " + title}
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+    link( rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/MullerLight.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/MullerThin.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="stylesheet" href="css/style.min.css" )
+
+  body
+    header.header
+      .header__logo
+        +svg("pricehacker-logo", "195", "38")
+      .header__upload
+        .button.button--coral
+          span Cкачать
+
+    main
+      .container
+        h1.visually-hidden #{mainTitle}
+        include partials/hero
+        include partials/new-approach
+        include partials/reduce
+        include partials/questions
+        include partials/app
+        include partials/partners
+
+
+    footer.footer
+      .footer__top
+        .footer__bank-data
+          .footer__bank-details
+            table.footer__table
+              tr
+                td
+                td Реквизиты :
+              tr
+                td Реквизиты :
+                td ИП Корягина И.Н.
+              tr
+                td
+                td ИНН 505010260402
+              tr
+                td
+                td ОГРН 320774600355864
+
+        .footer__contacts
+          .footer__contacts-details
+            table.footer__table
+              tr
+                td t:
+                td
+                  a(href="tel:+79168504249") +79168504249
+              tr
+                td e:
+                td
+                  a(href="mailto:pricehackerru@gmail.com") pricehackerru@gmail.com
+        .footer__auto
+        .footer__social
+          .footer__social-links
+            a.footer__social-link-item.footer__social-link-item--insta(href="")
+              +svg("insta", "28", "28")
+            a.footer__social-link-item.footer__social-link-item--facebook(href="")
+              +svg("facebook", "15", "28")
+      .footer__bottom
+        .footer__agreement
+          a(href="") Пользовательское соглашение
+        .footer__copyright
+          p © PRICEHACKER 2020
+    block scripts
+      script( src="js/script.min.js" )

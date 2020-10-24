@@ -1,0 +1,127 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 188px;
+  max-height: 800px;
+
+  @include tablet {
+    padding-bottom: 88px;
+  }
+
+  @include mobile {
+    display: block;
+    max-height: unset;
+    padding-bottom: 0;
+  }
+
+
+  &__img {
+    img {
+      max-width: size(598px);
+      width: 94%;
+      margin-left: -42px;
+      margin-top: 25px;
+      @include mobile {
+        width: size(362px);
+        margin-left: size(-44px);
+        height: size(412px);
+      }
+    }
+
+    @include mobile {
+      margin-bottom: size(64px);
+    }
+  }
+
+  &__link-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+
+
+    @include tablet {
+      justify-content: flex-start;
+    }
+
+    @include mobile {
+      overflow: hidden;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 56px;
+    margin: 27px 0 48px 10px;
+
+    @include laptop {
+      font-size: size(50px);
+      line-height: size(56px);
+    }
+
+    @include mobile {
+      font-size: size(32px);
+      line-height: size(32px);
+      margin: 0 0 size(24px) 0;
+    }
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include mobile {
+      font-size: size(16px);
+      line-height: size(24px);
+      margin: 0 size(10px) size(104px) 0;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    position: absolute;
+    bottom: 15px;
+    right: 51px;
+
+
+    & + svg {
+      position: absolute;
+      bottom: -161px;
+      right: -5px;
+
+      @include laptop {
+        bottom: size(-161px);
+        right: size(-5px);
+        width: size(500px);
+        height: size(316px);
+        z-index: -1;
+      }
+
+      @include tablet {
+        bottom: size(-40px);
+      }
+      @include mobile {
+        height: size(285px);
+        width: size(500px);
+        right: size(-27px);
+        bottom: size(20px);
+      }
+
+    }
+
+    @include mobile {
+      position: static;
+      width: size(250px);
+      height: size(64px);
+      margin-bottom: size(165px);
+      font-size: size(17px);
+      line-height: size(22px);
+      text-align: center;
+      letter-spacing: size(0.35px);
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}

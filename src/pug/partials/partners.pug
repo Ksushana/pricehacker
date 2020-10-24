@@ -1,0 +1,47 @@
+.partners
+  .partners__intro
+    .partners__title Для партнеров
+    .partners__text
+      |  «Price Hacker» сотрудничает с&nbsp;магазинами, поставщиками и&nbsp;площадками оптовых закупок по всей России и&nbsp;за рубежом. Становясь нашими партнерами, вы: 
+  .partners__be-partner
+    .partners__list
+
+      .partners__list
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Находите новых клиентов
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Увеличиваете количество постоянных клиентов
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Увеличиваете доход за счет дополнительного канала продаж
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Увеличиваете объем продаж за счет оптовых закупок
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Расширяете географию продаж
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Сокращаете расходы на операционную деятельность
+        .partners__list-item
+          +svg("tick-svg","26", "21")
+          |  Сокращаете расходы на логистику
+
+    .partners__form-right
+      form.partners__form(action="post")
+        .partners__form-block
+          input.partners__input.form__input(type="text" id="name" )
+          label.partners__label(for="name") Имя
+        .partners__form-block
+          input.partners__input.form__input(type="email" id="email" )
+          label.partners__label(for="email") Email
+        .partners__form-block
+          textarea.partners__textarea.form__input( cols="30", rows="3" id="message" )
+          label.partners__label(for="message") Сообщение
+        input.partners__checkbox(type="checkbox" id="agree")
+        label(for="agree") Я даю согласие на обработку персональных данных
+        button.button.button--black
+          | Стать парнером
+          +svg("arrow", "31", "12")

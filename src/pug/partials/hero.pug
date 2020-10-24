@@ -1,0 +1,26 @@
+block hero
+  .hero
+    .hero__text-block
+      h2.hero__title Сократите расходы на&nbsp;30% в&nbsp;месяц
+      p.hero__intro с помощью сервиса осознанных покупок «Price Hacker»!
+      ul.hero__list
+        li.hero__list-item.hero__list-item--statistics
+          +svg("barcode", "42", "28")
+          | По статистике каждый 2-й поход в магазин вы&nbsp;делаете минимум 3 спонтанных покупки
+        li.hero__list-item.hero__list-item--bag
+          +svg("bag", "36", "39")
+          | 40% ваших покупок — импульсивные, незапланированные
+        li.hero__list-item.hero__list-item--pie-chart
+          +svg("pie-chart", "34", "35")
+          | 30% из своего бюджета вы тратите именно на них
+      .hero__links
+        .hero__link-item
+          a(href="")
+            img(src="img/app-store@1x.png" srcset="img/app-store@2x.png 2x", alt="appstore")
+        .hero__link-item
+          a(href="")
+            img(src="img/gp@1x.png" srcset="img/gp@2x.png 2x", alt="gp")
+        .hero__dots
+          +svg("blue-dots-green-dot", "181", "275")
+    .hero__img
+      img(src="img/hero-img@1x.png" srcset="img/hero-img@2x.png 2x" alt="")

@@ -1,0 +1,142 @@
+.reduce {
+  width: 100%;
+  background-color: $color-bg-grey;
+  padding: 80px 80px 52px 52px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 168px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 68px;
+  }
+
+  @include mobile {
+    width: 100vw;
+    margin-left: size(-10px);
+    padding: size(64px) size(10px);
+    margin-bottom: size(268px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: size(-992px);
+    right: 128px;
+    height: size(992px);
+    width: size(162px);
+    max-width: 170px;
+    background-image: url("./../../img/labels.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+
+    @media (max-width: 1000px) {
+      right: 60px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: size(-240px);
+    left: 0;
+    height: size(251px);
+    width: size(192px);
+    background-image: url("./../../img/labels-mob.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    display: none;
+    z-index: -1;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 56px;
+    margin: 0 0 24px 0;
+
+    @include tablet {
+      font-size: 40px;
+      line-height: 42px;
+    }
+
+    @include mobile {
+      font-size: size(32px);
+      line-height: size(32px);
+      margin: 0 0 size(32px) 0;
+    }
+
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 0 0 32px 0;
+
+    @include mobile {
+      font-size: size(16px);
+      line-height: size(24px);
+      margin: 0 0 size(32px) 0;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 93px;
+    padding-right: 20px;
+    width: 383px;
+    min-height: 48px;
+    position: relative;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
+    @include mobile {
+      font-size: size(16px);
+      line-height: size(24px);
+      padding-left: size(40px);
+      margin-bottom: size(32px);
+      padding-right: 0;
+      min-height: unset;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    svg {
+      position: absolute;
+      left: 0;
+
+      @include mobile {
+        width: size(24px);
+        height: size(24px);
+        top: 0;
+      }
+    }
+  }
+}
