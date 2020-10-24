@@ -1615,7 +1615,7 @@ svg {
   height: 45.09091rem;
   width: 7.36364rem;
   max-width: 170px;
-  background-image: url("./../../img/labels.svg");
+  background-image: url("./../img/labels.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
@@ -1640,7 +1640,7 @@ svg {
   left: 0;
   height: 11.40909rem;
   width: 8.72727rem;
-  background-image: url("./../../img/labels-mob.svg");
+  background-image: url("./../img/labels-mob.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
@@ -1832,7 +1832,7 @@ svg {
     content: "";
     width: 9.77273rem;
     height: 7.40909rem;
-    background-image: url(./../../img/label-mob-2.svg);
+    background-image: url(./../img/label-mob-2.svg);
     background-position: left;
     background-repeat: no-repeat;
     top: -1.81818rem;
@@ -1848,7 +1848,7 @@ svg {
     content: "";
     width: 1.86364rem;
     height: 9.63636rem;
-    background-image: url(./../../img/label-mob-3.svg);
+    background-image: url(./../img/label-mob-3.svg);
     background-position: left;
     background-repeat: no-repeat;
     top: -1.81818rem;
@@ -1867,7 +1867,7 @@ svg {
     content: "";
     width: 2.09091rem;
     height: 12.95455rem;
-    background-image: url(./../../img/label-mob-1.svg);
+    background-image: url(./../img/label-mob-1.svg);
     background-position: right;
     background-repeat: no-repeat;
     top: 5.59091rem;
@@ -2370,7 +2370,7 @@ svg {
 }
 
 .partners__checkbox:checked + label::before {
-  background-image: url(./../../img/tick.svg);
+  background-image: url(./../img/tick.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
