@@ -785,6 +785,12 @@ svg {
   background-color: #F06C4E;
   padding: 22px 11px;
   width: 250px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.button--coral:hover {
+  background-color: #F29479;
 }
 
 @media (max-width: 767px) {
@@ -2031,6 +2037,7 @@ svg {
   position: absolute;
   bottom: -161px;
   right: -5px;
+  z-index: -1;
 }
 
 @media (max-width: 1439px) {
@@ -2039,7 +2046,6 @@ svg {
     right: -0.22727rem;
     width: 22.72727rem;
     height: 14.36364rem;
-    z-index: -1;
   }
 }
 
@@ -2068,7 +2074,7 @@ svg {
     line-height: 1rem;
     text-align: center;
     letter-spacing: 0.01591rem;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
   }
 }

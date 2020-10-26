@@ -90,13 +90,14 @@
       position: absolute;
       bottom: -161px;
       right: -5px;
+      z-index: -1;
 
       @include laptop {
         bottom: size(-161px);
         right: size(-5px);
         width: size(500px);
         height: size(316px);
-        z-index: -1;
+
       }
 
       @include tablet {
@@ -120,7 +121,7 @@
       line-height: size(22px);
       text-align: center;
       letter-spacing: size(0.35px);
-      margin-left: 0;
+      margin-left: auto;
       margin-right: auto;
     }
   }
