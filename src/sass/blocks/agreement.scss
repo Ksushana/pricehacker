@@ -1,0 +1,97 @@
+.agreement {
+  color: #000000;
+  margin: 80px 0;
+  width: 1006px;
+
+  @include laptop {
+    width: 100%;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+
+  @include mobile {
+    padding-right: 0;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 46px;
+    margin: 56px 0 24px;
+
+    @include mobile {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    span {
+      display: inline-block;
+      width: 78px;
+
+      @include tablet {
+        width: 49px;
+      }
+
+      @include mobile {
+        width: 28px;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0 0 24px 78px;
+
+    @include laptop {
+      margin-left: 50px;
+    }
+
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__list--first-line {
+    margin-left: 78px;
+
+    @include tablet {
+      margin-left: 48px;
+    }
+
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+
+  &__list--second-line {
+    margin-top: 24px;
+    padding-left: 66px;
+    @include tablet {
+      padding-left: 36px;
+    }
+
+    @include mobile {
+      padding-left: 15px;
+    }
+  }
+
+  li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+
+    .number {
+      width: 55px;
+      display: inline-block;
+    }
+  }
+}

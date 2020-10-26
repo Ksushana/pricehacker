@@ -1,1 +1,15 @@
 extends pug/layout.pug
+
+block variables
+  - let title = 'Pricehacker';
+
+block content
+  .container
+    h1.visually-hidden #{mainTitle}
+    include pug/partials/hero
+    include pug/partials/new-approach
+    include pug/partials/reduce
+    include pug/partials/questions
+    include pug/partials/app
+    include pug/partials/partners
+

@@ -68,6 +68,22 @@ a {
   margin: 0 auto;
   overflow: hidden;
 
+  &__agreement {
+    h1 {
+      margin-bottom: 16px;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  &__agreement--date {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   @include tablet {
     padding: 72px 40px;
   }
@@ -75,6 +91,13 @@ a {
   @include mobile {
     padding: 0 size(10px);
   }
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 56px;
 }
 
 svg {

@@ -25,15 +25,7 @@ html( lang="ru" )
           span Cкачать
 
     main
-      .container
-        h1.visually-hidden #{mainTitle}
-        include partials/hero
-        include partials/new-approach
-        include partials/reduce
-        include partials/questions
-        include partials/app
-        include partials/partners
-
+      block content
 
     footer.footer
       .footer__top
