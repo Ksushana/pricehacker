@@ -773,6 +773,8 @@ svg {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .button--coral {
@@ -785,8 +787,6 @@ svg {
   background-color: #F06C4E;
   padding: 22px 11px;
   width: 250px;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
 }
 
 .button--coral:hover {
@@ -808,7 +808,7 @@ svg {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  padding: 31px 30px 27px 30px;
+  padding: 30px 30px 27px 30px;
   background-color: #333E2B;
   letter-spacing: 0.08em;
   color: #F4F8FB;
@@ -821,6 +821,10 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.button--black:hover {
+  background-color: #637854;
 }
 
 .button--black svg {
