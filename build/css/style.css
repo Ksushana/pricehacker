@@ -1276,16 +1276,11 @@ svg {
   }
 }
 
-@media (max-width: 1199px) {
-  .new-approach__img {
-    margin-left: 0;
-  }
-}
-
 @media (max-width: 767px) {
   .new-approach__img {
     width: 13.63636rem;
     height: auto;
+    margin-left: 0;
   }
 }
 
@@ -1310,7 +1305,7 @@ svg {
   font-weight: normal;
   font-size: 0.72727rem;
   line-height: 1.09091rem;
-  padding-top: 0.45455rem;
+  padding-top: 0.90909rem;
 }
 
 @media (max-width: 767px) {
@@ -1319,6 +1314,10 @@ svg {
     line-height: 1.09091rem;
     padding-top: 0.72727rem;
   }
+}
+
+.new-approach__img-item svg {
+  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -1343,13 +1342,13 @@ svg {
 .new-approach__img-item--big-dino svg {
   width: 100%;
   height: 100%;
-  margin-bottom: 1.09091rem;
+  margin-bottom: 0.13636rem;
 }
 
 .new-approach__img-item--apple {
   width: 6.31818rem;
-  top: 2.86364rem;
-  left: 6.90909rem;
+  top: 1.45455rem;
+  left: 6.81818rem;
 }
 
 @media (max-width: 767px) {
@@ -1377,6 +1376,8 @@ svg {
 .new-approach__img-item--apple svg {
   width: 5.72727rem;
   height: 6.40909rem;
+  position: relative;
+  left: 0.45455rem;
 }
 
 .new-approach__img-item--soap {
@@ -1399,13 +1400,14 @@ svg {
 }
 
 .new-approach__img-item--sun {
-  width: 6rem;
-  top: 23.90909rem;
+  width: 7.95455rem;
+  top: 21rem;
   left: 8.77273rem;
 }
 
 @media (max-width: 767px) {
   .new-approach__img-item--sun {
+    width: 6.04545rem;
     top: 38.45455rem;
     left: 0.18182rem;
   }
@@ -1441,19 +1443,20 @@ svg {
 .new-approach__img-item--clothes svg {
   width: 5.04545rem;
   height: 5.40909rem;
+  left: -0.31818rem;
 }
 
 .new-approach__img-item--present {
   width: 8.18182rem;
   top: 22.09091rem;
-  right: 11.77273rem;
+  right: 10.63636rem;
 }
 
 @media (max-width: 767px) {
   .new-approach__img-item--present {
     bottom: 0.36364rem;
     top: unset;
-    padding-left: 4.54545rem;
+    padding-left: 4.86364rem;
     width: 12.72727rem;
     right: unset;
     left: 0.36364rem;
@@ -1464,6 +1467,7 @@ svg {
   width: 7.27273rem;
   height: 7.31818rem;
   margin-left: auto;
+  left: 7px;
 }
 
 .new-approach__img-item--present span {
@@ -1481,7 +1485,7 @@ svg {
 .new-approach__img-item--leafs {
   width: 5.63636rem;
   bottom: 0;
-  right: 1.81818rem;
+  right: 1.54545rem;
 }
 
 @media (max-width: 767px) {
@@ -1505,6 +1509,7 @@ svg {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    padding-top: 20px;
   }
   .new-approach__img-item--big-dino {
     width: 558px;
@@ -1515,16 +1520,18 @@ svg {
   .new-approach__img-item--big-dino svg {
     width: 100%;
     height: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 3px;
   }
   .new-approach__img-item--apple {
     width: 139px;
-    top: 63px;
-    left: 152px;
+    top: 32px;
+    left: 150px;
   }
   .new-approach__img-item--apple svg {
     width: 126px;
     height: 141px;
+    position: relative;
+    left: 10px;
   }
   .new-approach__img-item--soap {
     width: 132px;
@@ -1536,8 +1543,8 @@ svg {
     height: 111px;
   }
   .new-approach__img-item--sun {
-    width: 132px;
-    top: 526px;
+    width: 175px;
+    top: 462px;
     left: 193px;
   }
   .new-approach__img-item--sun svg {
@@ -1552,15 +1559,17 @@ svg {
   .new-approach__img-item--clothes svg {
     width: 111px;
     height: 119px;
+    left: -7px;
   }
   .new-approach__img-item--present {
     width: 180px;
     top: 486px;
-    right: 259px;
+    right: 234px;
   }
   .new-approach__img-item--present svg {
     width: 160px;
     height: 161px;
+    left: 0.31818rem;
   }
   .new-approach__img-item--present span {
     width: 160px;
@@ -1568,7 +1577,7 @@ svg {
   .new-approach__img-item--leafs {
     width: 124px;
     bottom: 0;
-    right: 40px;
+    right: 34px;
   }
   .new-approach__img-item--leafs svg {
     width: 111px;
