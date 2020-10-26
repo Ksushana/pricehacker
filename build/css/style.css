@@ -802,7 +802,7 @@ svg {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  padding: 27px 30px 27px 30px;
+  padding: 31px 30px 27px 30px;
   background-color: #333E2B;
   letter-spacing: 0.08em;
   color: #F4F8FB;
@@ -812,6 +812,9 @@ svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button--black svg {
@@ -822,7 +825,7 @@ svg {
   .button--black {
     font-size: 0.72727rem;
     line-height: 0.81818rem;
-    padding: 1.22727rem 1.22727rem 1.22727rem 1.22727rem;
+    padding: 1.40909rem 1.22727rem 1.22727rem 1.22727rem;
     width: 11.81818rem;
     height: 3.27273rem;
   }
