@@ -18,7 +18,7 @@ html( lang="ru" )
 
   body
     header.header
-      .header__logo
+      a.header__logo( href=(isMain ? null : 'https://price-hacker.ru/') )
         +svg("pricehacker-logo", "195", "38")
       .header__upload
         .button.button--coral
@@ -65,7 +65,7 @@ html( lang="ru" )
               +svg("facebook", "15", "28")
       .footer__bottom
         .footer__agreement
-          a(href="/agreement.html") Пользовательское соглашение
+          a(href="https://price-hacker.ru/user-agreement" class=(isAgreement ? "hide" : null)) Пользовательское соглашение
         .footer__copyright
           p © PRICEHACKER 2020
     block scripts

@@ -492,6 +492,10 @@ svg {
   display: block;
 }
 
+.hide {
+  display: none;
+}
+
 /* Blocks */
 .header {
   display: -webkit-box;
