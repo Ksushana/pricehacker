@@ -245,10 +245,12 @@
     }
 
     &:checked + label::before {
-      background-image: url(./../img/tick.svg);
+      background-image: url(./../img/tick-white.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 70%;
+      background-color: #00AF57;
+      border: 1px solid #00AF57;
     }
   }
 }
